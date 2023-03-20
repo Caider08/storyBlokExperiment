@@ -1,9 +1,9 @@
 import { storyblokEditable, storyblokInit } from '@storyblok/js';
 
 <script setup>
-const story = await useStoryblok('home', 
+const story = await useStoryblok("home", 
 { 
-    version: useRoute().query._storyblok ? "draft" : "published",
+    version: "draft",
     resolve_relations: 'featuredProjects.projects',
 
 }, {
